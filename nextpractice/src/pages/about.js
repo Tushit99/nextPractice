@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const about = () => {
   return (
-    <div>
+    <div className={style.headbox}>
       <div className={style.nav}>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
       </div>
-      <div>This is about Page</div>
+      <h1 className={style.box1}>This is about Page</h1>
     </div>
   );
 };

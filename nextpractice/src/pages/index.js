@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main
-      className={`min-h-screen `}
+      className={style.headbox}
     >
       <div className={style.nav}>
         <Link href="/">Home</Link>
