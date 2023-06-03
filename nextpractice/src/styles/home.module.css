@@ -3,11 +3,17 @@
     width: 100%; 
     background-color: rgb(0, 72, 116); 
     padding: 10px; 
+    font-family: Arial ; 
     display: flex; 
     align-items: center; 
     justify-content: space-evenly;
 }
 
+.nav *{
+    color: white; 
+    font-size: x-large; 
+    font-weight: bold; 
+}
 
 .box1{
     text-align: center; 
