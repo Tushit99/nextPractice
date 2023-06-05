@@ -1,6 +1,4 @@
 import style from "../styles/home.module.css";
-import Link from "next/link";  
-
 
 const contact = () => {
   return (

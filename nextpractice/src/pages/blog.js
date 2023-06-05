@@ -1,4 +1,4 @@
-import React from 'react'
+import style from "../styles/home.module.css";
 
 const blog = () => {
   return (
