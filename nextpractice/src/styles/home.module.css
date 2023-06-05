@@ -32,4 +32,12 @@
     font-weight: bold; 
 }
 
+.slug_link{
+    text-decoration: underline; 
+    font-size: large; 
+    font-weight: bold; 
+    color: blue;   
+    cursor: pointer;  
+}
+
 
