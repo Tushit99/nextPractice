@@ -15,4 +15,10 @@ h1{
   font-weight: bold; 
 }
 
+hr{
+  border: 1px solid black; 
+  background-color: black; 
+  width: 96%; 
+  margin: auto; 
+}
 
