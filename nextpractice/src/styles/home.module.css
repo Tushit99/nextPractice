@@ -3,6 +3,7 @@
     width: 200px ; 
     max-height: 100px;    
     object-fit: cover;  
+    padding-left: 40px; 
 } 
 
 .logo>img{  
@@ -16,7 +17,8 @@
     align-items: center; 
     justify-content: space-between; 
     padding: auto 100px; 
-    border: 2px solid black; 
+    border-bottom: 2px solid rgba(0, 0, 0, 0.705);  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
     width: 100%; 
 }  
 

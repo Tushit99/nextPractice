@@ -7,7 +7,7 @@ const Blog = () => {
 
     return (
         <div className={style.slg_head}>
-            <h1>Title of the Page {slug} </h1>
+            <h1>Title of the Page {slug} </h1> 
             <hr /> 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus numquam nostrum possimus ipsa maxime corrupti fugiat! Odio similique nisi voluptatem reiciendis modi nihil, quaerat ex eveniet doloremque corrupti possimus accusantium. 
