@@ -8,7 +8,7 @@ export default function Home() {
     await fetch("https://movies-database-gold.vercel.app/movies").then((e) => {
       setData(e);
     });
-    console.log(data); 
+    console.log(data);
   };
 
   useEffect(() => {
@@ -18,7 +18,10 @@ export default function Home() {
   return (
     <main className={styles.headbox}>
       <h1 className={styles.box1}>This is Nextjs Home Page</h1>
-      <div> 
+      <div>
+        Next.js is an open-source web development framework created by the
+        private company Vercel providing React-based web applications with
+        server-side rendering and static website generation.
       </div>
     </main>
   );
