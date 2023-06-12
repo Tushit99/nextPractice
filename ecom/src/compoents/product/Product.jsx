@@ -9,7 +9,7 @@ const Product = () => {
 
     useEffect(() => {
         let isPage = searchParams.get("page") || 1;
-        let israting = searchParams.get("rating") || "";
+        let israting = searchParams.get("rating") || "";  
         let isbrand = searchParams.getAll("brand") || [];
 
         setPage(isPage);
@@ -19,11 +19,11 @@ const Product = () => {
     }, [])
 
     console.log(page);
-    console.log(rating);
+    console.log(rating); 
     console.log(brand);
 
     return (
-        <div>Product Page</div>
+        <div>Product Page</div> 
     )
 }
 

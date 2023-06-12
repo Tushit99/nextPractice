@@ -9,8 +9,14 @@ nav{
 
 nav>div:nth-child(1){
     flex: 1;  
-    border: 1px solid black;
+    /* border: 1px solid black;    */
+    text-align: left; 
 } 
+
+nav>div:nth-child(1) *{
+    margin: auto; 
+    padding: 0; 
+}
 
 nav>div:nth-child(2){
     flex: 1;  
@@ -18,7 +24,7 @@ nav>div:nth-child(2){
     justify-content:flex-end;    
     gap: 20px; 
     align-items: center;  
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
 }
 
 nav>div:nth-child(2) *{
