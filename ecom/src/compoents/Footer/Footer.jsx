@@ -6,8 +6,10 @@ const Footer = () => {
         <div>
             <h5>Help</h5>
             <p>Customer Service</p>
-            <p></p>
-            <p></p>
+            <p>Track Order</p>
+            <p>Returns & Exchanges</p>
+            <p>Shipping</p>
+            <p>Contact Us</p> 
         </div>
         <div></div>
         <div></div>
