@@ -26,6 +26,10 @@ const Footer = () => {
             <p>Terms of Use</p> 
             <p>Privacy Policy</p>  
         </div> 
+        <div>
+            <h5>Like Being First?</h5> 
+            <p>Get can't-miss style news, before everybody else. </p>
+        </div>
     </div>
   )
 }  
