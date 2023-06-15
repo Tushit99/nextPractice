@@ -1,0 +1,20 @@
+
+.data_list{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);  
+    gap: 20px; 
+    width: 92%;  
+    margin: auto;  
+    text-align: left; 
+}
+
+.data_detail *{
+    margin: 2px 0 0 0 ;  
+}
+
+.data_detail img{
+    width: 100%;   
+    margin: 2px 0 0 0 ; 
+}
+
+

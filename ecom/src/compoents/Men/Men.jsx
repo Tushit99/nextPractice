@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'; 
 import { useLocation, useSearchParams } from 'react-router-dom'; 
-import stl from "./Product.module.css"; 
+import stl from "./Men.module.css"; 
 
-const Product = () => {
+const Men = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [data, setData] = useState([])
     const [page, setPage] = useState(1);
@@ -44,4 +44,4 @@ const Product = () => {
     )
 }
 
-export default Product  
+export default Men
