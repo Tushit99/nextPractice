@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'; 
-import { useLocation, useSearchParams } from 'react-router-dom'; 
+import { useLocation, useSearchParams } from 'react-router-dom';
 import stl from "./Men.module.css"; 
 
 const Men = () => {
