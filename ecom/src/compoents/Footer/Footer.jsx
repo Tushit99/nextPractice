@@ -18,9 +18,14 @@ const Footer = () => {
             <p>My Favorites</p> 
         </div>
         <div>
-            
-        </div>
-        <div></div>
+            <h5>About J.Crew</h5>  
+            <p>Our Story</p>
+            <p>Careers</p>
+            <p>Social Responsibility</p>
+            <p>Investor Relations</p> 
+            <p>Terms of Use</p> 
+            <p>Privacy Policy</p>  
+        </div> 
     </div>
   )
 }  
