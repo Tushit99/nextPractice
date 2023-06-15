@@ -37,6 +37,7 @@ const Men = () => {
                         <h3>{e.tags} </h3>  
                         <p>brand: {e.brand}</p>  
                         <p>Price: ₹{e.price}</p>   
+                        <button></button>
                     </div>
                 ))}
             </div>
