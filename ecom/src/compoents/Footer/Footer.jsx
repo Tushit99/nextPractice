@@ -11,8 +11,15 @@ const Footer = () => {
             <p>Shipping</p>
             <p>Contact Us</p> 
         </div>
-        <div></div>
-        <div></div>
+        <div>
+            <h5>Quick Links</h5>  
+            <p>Size Charts</p>
+            <p>Offers & Promotions</p>
+            <p>My Favorites</p> 
+        </div>
+        <div>
+            
+        </div>
         <div></div>
     </div>
   )
