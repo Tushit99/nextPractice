@@ -5,16 +5,16 @@
     width: 92%;
     margin: auto;
     text-align: left;
-}
-
-.data_detail{
+  }
+  
+  .data_detail{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px 10px;  
     border-radius: 10px; 
-
-}
-
-.data_detail * {
+  
+  }
+  
+  .data_detail * { 
     margin: 2px 0 0 0; 
     font-size: large; 
   }
@@ -48,6 +48,10 @@
   .rate * {
     font-size: 28px;
     size: 20px;
+  } 
+  
+  .rate h4{
+    color: gold;
   }
   
   input[type="radio"] {
