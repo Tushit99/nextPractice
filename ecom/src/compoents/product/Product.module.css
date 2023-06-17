@@ -3,13 +3,20 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 92%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: auto;
   text-align: left;
 }
 
+.data_detail{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 10px;  
+  border-radius: 10px; 
+
+}
+
 .data_detail * {
-  margin: 2px 0 0 0;
+  margin: 2px 0 0 0; 
+  font-size: large; 
 }
 
 .data_detail img {
