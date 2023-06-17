@@ -37,7 +37,7 @@ const Product = () => {
 
   return (
     <div>
-      <h1>Product Page</h1>
+      <h1>Women's Page</h1>
       <div className={stl.Product_head}>
         <div className={stl.ratings}>
           <div className={stl.rate}>
