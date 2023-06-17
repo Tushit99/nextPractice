@@ -11,6 +11,7 @@ const Navbar = () => {
             <div id={style.box2}>
                 <Link to="/">Home</Link>
                 <Link to="/product">Product</Link>
+                <Link to="/men"> Men </Link>
             </div>
         </nav>
     ) 
