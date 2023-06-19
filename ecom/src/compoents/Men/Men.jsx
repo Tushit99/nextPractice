@@ -77,6 +77,13 @@ const Men = () => {
                             <h4>&#9734; &#9734; &#9734; &#9734; &#9734; </h4>
                         )}
                     </div>
+                    <div>
+                        <h2>Brand</h2> 
+                        <p>levis</p> 
+                        <p>yepme</p> 
+                        <p>mufti</p> 
+                        <p>van-heusen</p> 
+                    </div>
                 </div> 
                 <div className={stl.data_list}>
                     {data?.map((e, i) => (
