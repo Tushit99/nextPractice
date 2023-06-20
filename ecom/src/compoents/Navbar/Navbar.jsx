@@ -1,12 +1,13 @@
-import React from 'react'
-import style from "./Navbar.css"
-import { Link } from 'react-router-dom'
+import React from 'react';
+import style from "./Navbar.css";
+import { Link } from 'react-router-dom';
+import logo from "../../images/logo.png";
 
 const Navbar = () => {
     return (
-        <nav> 
+        <nav>
             <div id={style.box1}>
-                <h1>Logo</h1>
+                <img src={logo} alt="logo" className={style.company_logo} />
             </div>
             <div id={style.box2}>
                 <Link to="/">Home</Link>
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <Link to="/men"> Men </Link>
             </div>
         </nav>
-    ) 
-}  
+    )
+}
 
 export default Navbar 

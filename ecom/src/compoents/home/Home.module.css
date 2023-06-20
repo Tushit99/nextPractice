@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 98%;
-  margin: auto;
-  gap: 10px;
+  margin: 20px auto 0 auto;
+  gap: 10px; 
 } 
 
 .home_top>div{

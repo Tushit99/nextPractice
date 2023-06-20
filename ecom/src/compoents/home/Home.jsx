@@ -3,8 +3,7 @@ import style from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div> 
       <div className={style.home_top}>
         <div>
           <img src="https://www.jcrew.com/brand_creative/2023/202306-Jun/linen/2023jun_0523_linen_w_img4.jpg" alt="img1" />

@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
-import stl from "./Men.module.css"; 
+import stl from "./Men.module.css";  
 
 const Men = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -12,7 +12,7 @@ const Men = () => {
     const [rating, setRating] = useState(initialRating || null);  
     const location = useLocation();
     const limit = 12;
-    const [brand, setBrand] = useState(initalBrand || []);
+    const [brand, setBrand] = useState(initalBrand || []); 
 
     // const handleChange = (e) => {
     //     let newCat = [...brand];

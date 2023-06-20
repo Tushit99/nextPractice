@@ -6,11 +6,13 @@ import Men from './Men/Men'
 
 const PublicRoute = () => {
   return (
-    <Routes>
-        <Route path="/" element={<Home />} />  
-        <Route path="/product" element={<Product />} /> 
-        <Route path='/men' element={<Men />} />  
-    </Routes> 
+    <div id="page"> 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path='/men' element={<Men />} />
+      </Routes>
+    </div>
   )
 }
 
