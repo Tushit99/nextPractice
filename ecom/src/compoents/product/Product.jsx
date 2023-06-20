@@ -59,7 +59,7 @@ const Product = () => {
                         {rating == 3 ? (
                             <h4>&#9733; &#9733; &#9733; &#9734; &#9734; </h4>
                         ) : (
-                            <h4>&#9734; &#9734; &#9734; &#9734; &#9734; </h4>
+                            <h4>&#9734; &#9734; &#9734; &#9734; &#9734; </h4> 
                         )} 
                     </div>
                     <div className={stl.rate}>
@@ -85,7 +85,7 @@ const Product = () => {
                             <img src={e.image} alt="product-img" />
                             <h3>{e.tags} </h3>
                             <p>brand: {e.brand}</p>
-                            <p>Price: ₹{e.price}</p>
+                            <p>Price: {e.price}</p>
                             <p>rating: {e.rating}</p>
                         </div>
                     ))}
