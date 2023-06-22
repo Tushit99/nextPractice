@@ -1,40 +1,40 @@
-
-nav{
-    display: flex; 
-    justify-content: center ;
-    align-items: center;  
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    padding: 10px 40px;  
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
- }
-
-nav>div:nth-child(1){
-    flex: 1;  
-    text-align: left; 
-} 
-
-nav>div:nth-child(1) *{
-    margin: 0; 
-    padding: 0;  
-    width: 90px;  
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 40px;
+  z-index: 10;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-nav>div:nth-child(2){
-    flex: 1;  
-    display: flex; 
-    justify-content:flex-end;    
-    gap: 20px; 
-    align-items: center;  
-    /* border: 1px solid black;  */
+nav > div:nth-child(1) {
+  flex: 1; 
+  text-align: left;
 }
 
-nav>div:nth-child(2) *{
-    text-decoration: none; 
-    color: black; 
-    font-size: large; 
-    font-weight: 500;
+nav > div:nth-child(1) * {
+  margin: 0;
+  padding: 0;
+  width: 90px;
 }
 
+nav > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  /* border: 1px solid black;  */
+}
+
+nav > div:nth-child(2) * {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+}

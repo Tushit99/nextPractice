@@ -1,0 +1,59 @@
+.data_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 92%;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .data_detail {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+  
+  .data_detail * {
+    margin: 2px 0 0 0;
+    font-size: large;
+  }
+  
+  .data_detail img {
+    width: 100%;
+    margin: 2px 0 0 0;
+  }
+  
+  /* ============= */
+  
+  .Product_head {
+    display: flex;
+  }
+  
+  .Product_head > div:nth-child(1) {
+    flex: 3;
+  }
+  
+  .Product_head > div:nth-child(2) {
+    flex: 9;
+  }
+  
+  /* radio button */
+  
+  .rate {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rate * {
+    font-size: 20px; 
+  }
+  
+  .rate h4 {
+    color: gold;
+  } 
+  
+  input[type="radio"] {
+    width: 24px;
+    height: 24px;
+  }
+  

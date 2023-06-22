@@ -22,7 +22,7 @@ const Product = () => {
     //     if (newCat.includes(value)) {
     //         newCat.splice(newCat.indexOf(value), 1);
     //     } else {
-    //         newCat.push(value);
+    //         newCat.push(value);  
     //     }
     //     setBrand(newCat);
     // };  
@@ -42,7 +42,7 @@ const Product = () => {
             .get(`https://grandscale.onrender.com/mensShirt/${location.search}`)
             .then((e) => {
                 setData(e.data);
-                console.log(e.data);
+                console.log(e.data); 
             });
 
         setSearchParams(obj);

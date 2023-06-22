@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
-import stl from "./Men.module.css";
+import stl from "./Female.module.css";
 
-const Men = () => {
+const Female = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [data, setData] = useState([]); 
     const initialRating = searchParams.get("rating");
@@ -52,7 +52,7 @@ const Men = () => {
 
     return (
         <div>
-            <h1>Men's Page</h1>
+            <h1>Female's Page</h1> 
             <div className={stl.Product_head}>
                 <div className={stl.ratings}>
                     <h1> Length: {data.length}</h1>
@@ -114,6 +114,6 @@ const Men = () => {
             </div>
         </div>
     );
-};
+}; 
 
-export default Men;
+export default Female;
