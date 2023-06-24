@@ -16,6 +16,7 @@ app.listen(process.env.port, async () => {
     await connection;
     console.log("Connected to DataBase");
   } catch (error) {
+    console.log(error); 
     console.log("Couldn't connect to DataBase");
   }
   console.log(`Server running on port ${process.env.port}`);
