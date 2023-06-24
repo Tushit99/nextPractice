@@ -1,3 +1,9 @@
+
+.page_top{
+  width: 96%; 
+  margin: auto; 
+}
+
 .data_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
