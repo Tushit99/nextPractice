@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/womentop", womentopRouter);
-app.use("/menshirt", menshirtRouter);
+app.use("/menshirt", menshirtRouter); 
 
 app.listen(process.env.port, async () => {
   try {
