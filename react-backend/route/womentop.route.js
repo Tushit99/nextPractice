@@ -3,9 +3,20 @@ const { WomensTopModel } = require("../module/womentop.model");
 
 const womentopRouter = express.Router();
 
-womentopRouter.get("/", async (req, res) => {
+womentopRouter.get("/", async (req, res) => {   
+  const param = req.params; 
   try {
     let data = await WomensTopModel.find();
+    res.send({ message: data });
+  } catch (err) {
+    res.status(500).send({ message: "Error" });
+  }
+});
+
+womentopRouter.get("/:id", async (req, res) => {   
+  const { id } = req.params; 
+  try {
+    let data = await WomensTopModel.find({ _id: id });
     res.send({ message: data });
   } catch (err) {
     res.status(500).send({ message: "Error" });
