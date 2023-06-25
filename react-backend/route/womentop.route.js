@@ -1,9 +1,9 @@
 const express = require("express");
-const { WomensTopModel } = require("../module/product.model");
- 
-const menRouter = express.Router();
+const { WomensTopModel } = require("../module/womentop.model");
+  
+const womentopRouter = express.Router();
 
-menRouter.get("/",async(req,res)=>{
+womentopRouter.get("/",async(req,res)=>{
     try { 
         let data = await WomensTopModel.find(); 
         res.send({message: data});  
@@ -12,7 +12,7 @@ menRouter.get("/",async(req,res)=>{
     }
 })
 
-menRouter.post("/add", async (req, res) => {
+womentopRouter.post("/add", async (req, res) => {
     const payload = req.body;
     try {
       const WomensTop = new WomensTopModel(payload);
@@ -23,4 +23,4 @@ menRouter.post("/add", async (req, res) => {
     }
   }); 
 
-module.exports={menRouter}
+module.exports={womentopRouter}

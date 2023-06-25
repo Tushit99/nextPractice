@@ -1,8 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const { connection } = require("./db");
-const { menRouter } = require("./route/routes");
+const { connection } = require("./db");  
+const { womentopRouter } = require("./route/womentop.route");
 
 const app = express();
 app.use(express.json());
@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome To HomePage");
 }); 
 
-app.use("/men",menRouter)
+app.use("/womentop",womentopRouter)
 
 app.listen(process.env.port, async () => {
   try {
