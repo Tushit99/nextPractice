@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import stl from "./Men.module.css";
+import Skliton from "../ProductSkliton/Skliton";
 
 const Men = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -100,7 +101,7 @@ const Men = () => {
                         </div>
                     </div>
                 </div>
-                <div className={stl.data_list}> 
+                {data.length == 0 ? <Skliton /> : <div className={stl.data_list}>
                     {data?.map((e, i) => (
                         <div key={i + 1} className={stl.data_detail}>
                             <img src={e.image} alt="product-img" />
@@ -110,7 +111,7 @@ const Men = () => {
                             <p>rating: {e.rating}</p>
                         </div>
                     ))}
-                </div>
+                </div>}  
             </div>
         </div>
     );

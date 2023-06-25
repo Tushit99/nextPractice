@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
-import stl from "./Female.module.css";
+import stl from "./Female.module.css"; 
+import Skliton from "../ProductSkliton/Skliton"
 
 const Female = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -34,16 +35,16 @@ const Female = () => {
 
         let obj = {};
 
-        rating && (obj.rating = rating); 
+        rating && (obj.rating = rating);
         brand && (obj.brand = brand);
 
-        setSearchParams(obj);  
-        console.log(location.search); 
+        setSearchParams(obj);
+        console.log(location.search);
         axios
             .get(`https://grandscale.onrender.com/womensKurtis/${location.search}`)
             .then((e) => {
-                setData(e.data);  
-                console.log(e.data); 
+                setData(e.data);
+                console.log(e.data);
             });
     }, [location.search, rating, brand]);
 
@@ -59,7 +60,7 @@ const Female = () => {
                             type="radio"
                             name="radio"
                             value={3}
-                             
+
                             onClick={handelRating}
                             defaultChecked={rating == 3}
                         />
@@ -73,7 +74,7 @@ const Female = () => {
                         <input
                             type="radio"
                             name="radio"
-                            value={4} 
+                            value={4}
                             onClick={handelRating}
                             defaultChecked={rating == 4}
                         />
@@ -87,7 +88,7 @@ const Female = () => {
                         <input
                             type="radio"
                             name="radio"
-                            value={5} 
+                            value={5}
                             onClick={handelRating}
                             defaultChecked={rating == 5}
                         />
@@ -103,7 +104,7 @@ const Female = () => {
                         <div className={stl.rate}>
                             <input
                                 type="radio"
-                                value={"levis"} 
+                                value={"levis"}
                                 defaultChecked={brand.includes("levis")}
                                 onClick={handleBrand}
                             />
@@ -112,7 +113,7 @@ const Female = () => {
                         <div className={stl.rate}>
                             <input
                                 type="radio"
-                                value={"mufti"} 
+                                value={"mufti"}
                                 defaultChecked={brand.includes("mufti")}
                                 onClick={handleBrand}
                             />
@@ -121,7 +122,7 @@ const Female = () => {
                         <div className={stl.rate}>
                             <input
                                 type="radio"
-                                value={"zara"} 
+                                value={"zara"}
                                 defaultChecked={brand.includes("zara")}
                                 onClick={handleBrand}
                             />
@@ -129,7 +130,7 @@ const Female = () => {
                         </div>
                     </div>
                 </div>
-                <div className={stl.data_list}>
+                {data.length == 0 ? <Skliton /> : <div className={stl.data_list}>
                     {data?.map((e, i) => (
                         <div key={i + 1} className={stl.data_detail}>
                             <img src={e.image} alt="product-img" />
@@ -139,7 +140,7 @@ const Female = () => {
                             <p>rating: {e.rating}</p>
                         </div>
                     ))}
-                </div>
+                </div>}   
             </div>
         </div>
     );

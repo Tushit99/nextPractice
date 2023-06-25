@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import stl from "./Product.module.css";
 import { Radio, RadioGroup, Stack } from "@chakra-ui/react";
+import Skliton from "../ProductSkliton/Skliton";
 
 const Product = () => {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -79,17 +80,17 @@ const Product = () => {
                         )}
                     </div>
                 </div> 
-                <div className={stl.data_list}>
+                {data.length == 0 ? <Skliton /> : <div className={stl.data_list}>
                     {data?.map((e, i) => (
                         <div key={i + 1} className={stl.data_detail}>
                             <img src={e.image} alt="product-img" />
                             <h3>{e.tags} </h3>
                             <p>brand: {e.brand}</p>
-                            <p>Price: {e.price}</p>
+                            <p>Price: ₹{e.price}</p>
                             <p>rating: {e.rating}</p>
                         </div>
                     ))}
-                </div>
+                </div>}  
             </div>
         </div>
     );

@@ -1,10 +1,10 @@
 import React from 'react'
 import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import 'react-loading-skeleton/dist/skeleton.css' 
 
 const Skliton = () => {
     return (
-        <div>
+        <div className='grid_product'>
             {/* 1 */}
             <div>
                 <Skeleton height={220} />
