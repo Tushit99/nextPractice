@@ -13,7 +13,8 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome To HomePage");
 });
 
-app.use("/womentop", womentopRouter); 
+app.use("/womentop", womentopRouter);
+app.use("/menshirt", menshirtRouter);
 
 app.listen(process.env.port, async () => {
   try {
