@@ -1,0 +1,11 @@
+
+.top{
+    width: 90%; 
+    max-width: 560px; 
+    margin: 6% auto;   
+} 
+
+.top *{
+    font-size: large; 
+}
+
