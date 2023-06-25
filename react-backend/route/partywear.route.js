@@ -6,7 +6,7 @@ partywereRoute.get("/", async (req, res) => {
     const param = req.params;
     try {
         let data = await partywearModel.find();
-        res.send({ message: data });
+        res.send({ message: data }); 
     } catch (err) {
         res.status(500).send({ message: "Error" });
     }

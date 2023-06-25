@@ -4,6 +4,7 @@ const cors = require("cors");
 const { connection } = require("./db");
 const { womentopRouter } = require("./route/womentop.route");
 const { menshirtRouter } = require("./route/mensShirt.route");
+const { partywereRoute } = require("./route/partywear.route");
 
 const app = express();
 app.use(express.json());
@@ -14,7 +15,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/womentop", womentopRouter);
-app.use("/menshirt", menshirtRouter); 
+app.use("/menshirt", menshirtRouter);  
+app.use("/partywere", partywereRoute); 
 
 app.listen(process.env.port, async () => {
   try {
